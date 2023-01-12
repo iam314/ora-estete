@@ -1,6 +1,6 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Mon Dec 05 2022 16:14:06 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="6374d61e7602dc1798411407" data-wf-site="6374d61e7602dce0d4411406">
+<!--  Last Published: Thu Jan 12 2023 12:45:47 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6374d61e7602dc1798411407" data-wf-site="6374d61e7602dce0d4411406" lang="en">
 <head>
   <meta charset="utf-8">
   <title>ora estete</title>
@@ -38,20 +38,16 @@ body {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-.cursor {
-	pointer-events: none;
-}
 .bodynoscroll {
 	height: 100%;
 	overflow: hidden;
 }
+.nav-links:hover {
+	color: #7c5b4a !important;
+}
 ::selection {
   background-color: #000000;
   color:#ffffff;
-}
-@media (pointer: fine) {
-    /* Code for non-touch devices */
-    body:hover .cursor {opacity:1.0;}
 }
 #Contact, #About, #Home {
 	outline: none;
@@ -88,9 +84,6 @@ body {
 }
 </style>
   </div>
-  <div data-w-id="f0f01023-709e-d3b1-bb64-480fdbf507e5" class="cursor">
-    <div class="cursor_dot"></div>
-  </div>
   <div id="closevid" data-w-id="11fd715f-5ca9-0665-4563-a74927facd01" class="modal">
     <div class="close-button">
       <a href="#" class="close-modal_link w-inline-block">
@@ -107,7 +100,7 @@ body {
       </div>
     </div>
   </div>
-  <div data-w-id="d986e466-d324-35fe-ff1e-0e408ca78b4f" style="-webkit-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="mobile-menu-overlay">
+  <div style="-webkit-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="mobile-menu-overlay">
     <div class="wrapper">
       <div class="container">
         <div class="close-mobile-menu">
@@ -120,7 +113,7 @@ body {
           </a>
         </div>
         <div class="mobile-menu-links-wrapper">
-          <a data-w-id="b31a1abc-e406-525f-60a3-2e22a08bd852" href="#" class="mobile-menu-links hide">Case Studies</a>
+          <a data-w-id="b31a1abc-e406-525f-60a3-2e22a08bd852" href="case-studies.html" class="mobile-menu-links">Case Studies</a>
           <a data-w-id="2e754d46-d81f-cc9e-1c25-9755ab1b0994" href="/#About" class="mobile-menu-links">About</a>
           <a data-w-id="63ff8453-716d-3f26-b4e9-69f749448fef" href="/#Contact" class="mobile-menu-links">Contact</a>
         </div>
@@ -156,7 +149,7 @@ body {
               <div class="logo-link-txt">h`ome</div>
             </a>
             <div class="menu-items">
-              <a href="#" class="nav-links hide">Case Studies</a>
+              <a href="case-studies.html" class="nav-links">Case Studies</a>
               <a href="/#About" class="nav-links">About</a>
               <a href="/#Contact" class="nav-links">Contact</a>
               <a data-w-id="612a0662-dda5-2e97-669c-581b8dfff03a" href="#" class="mobile-menu-btn w-inline-block">
@@ -188,8 +181,8 @@ body {
           <div class="container">
             <h1 class="heading-big color-w">High-end visual <br>experiences</h1>
             <div class="showreel-btn">
-              <div class="btn-wrapper"><img src="images/showreel_icon.svg" loading="lazy" alt="watch showreel icon" class="icons">
-                <a data-w-id="2f358daa-5371-b0ab-d410-894cd17bbc96" href="#" class="button w-button">Watch showreel</a>
+              <div data-w-id="17c1eae2-f335-8076-9c44-dca799adcaa5" class="btn-wrapper"><img src="images/showreel_icon.svg" loading="lazy" alt="watch showreel icon" class="icons hide">
+                <a href="#" class="button w-button">Watch showreel</a>
               </div>
             </div>
           </div>
@@ -243,15 +236,6 @@ body {
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script>
-// © Code by T.RICKS, https://www.tricksdesign.com/
-// You have the license to use this code in your projects but not redistribute it to others
-// .cursor class needs to have a mouse click interaction applied
-  $('a').mouseenter(function() {
-  $('.cursor').click();
-});
-$('a').mouseleave(function() {
-  $('.cursor').click();
-});
 // when the DOM is ready document.addEventListener("DOMContentLoaded", function() { // get the the span element const yrSpan = document.querySelector('.hack14-year'); // get the current year const currentYr = new Date().getFullYear(); // set the year span element's text to the current year erSpan.textContent = current r; });
 // when the DOM is ready
 document.addEventListener("DOMContentLoaded", function() { 
